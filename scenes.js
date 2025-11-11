@@ -1,160 +1,45 @@
 window.SCENES = {
-  livdin_v1: {
-    group: "Living Room & Dining",
-    title: "Central View",
-    url: "assets/images/Living_Room-View1.jpg",
+  diningArea: {
+    group: 'Dining Area',
+    title: 'Dining Area',
+    url: 'assets/images/Dining Area.jpg',
     floorplan: {
       // Position the floor plan pin using percentages of the image width / height.
-      x: 75,
-      y: 30
+      x: 25,
+      y: 50
     },
-    hotspots: [
-      {
-        // Adjust pitch (vertical) and yaw (horizontal) to move the hsimage.png hotspot dot.
-        type: 'scene',
-        sceneId: 'livdin_v2',
-        target: 'livdin_v2',
-        pitch: -10,
-        yaw: -20,
-        text: "Nook Corner",
-        cssClass: 'hs-dot'
-      },
-      {
-        type: 'scene',
-        sceneId: 'livdin_v3',
-        pitch: -10,
-        yaw: -75,
-        text: 'Media Lounge',
-        cssClass: 'hs-dot'
-      }
-    ]
+    hotspots: []
   },
-  livdin_v2: {
-    group: "Living Room & Dining",
-    title: "Nook Corner",
-    url: "assets/images/Living_Room-View2.jpg",
+  committeeBox: {
+    group: 'Committee Box',
+    title: 'Committee Box',
+    url: 'assets/images/Committee box.jpg',
     floorplan: {
-      x: 70,
-      y: 15
+      // Position the floor plan pin using percentages of the image width / height.
+      x: 58,
+      y: 55
     },
-    hotspots: [
-      {
-        type: 'scene',
-        sceneId: 'livdin_v1',
-        pitch: 0,
-        yaw: 160,
-        text: 'Central View',
-        cssClass: 'hs-dot'
-      },
-      {
-        type: 'scene',
-        sceneId: 'livdin_v3',
-        pitch: 0,
-        yaw: 240,
-        text: 'Media Lounge',
-        cssClass: 'hs-dot'
-      }
-    ]
+    hotspots: []
   },
-  livdin_v3: {
-    group: "Living Room & Dining",
-    title: "Media Lounge",
-    url: "assets/images/Living_Room-View3.jpg",
+  stewardsBox: {
+    group: 'Stewards Box',
+    title: 'Stewards Box',
+    url: 'assets/images/Stewards Box.jpg',
     floorplan: {
-      x: 55,
-      y: 25
+      // Position the floor plan pin using percentages of the image width / height.
+      x: 40,
+      y: 45
     },
-    hotspots: [
-      {
-        type: 'scene',
-        sceneId: 'livdin_v1',
-        pitch: -5,
-        yaw: 115,
-        text: 'Central View',
-        cssClass: 'hs-dot'
-      },
-      {
-        type: 'scene',
-        sceneId: 'livdin_v2',
-        pitch: 0,
-        yaw: 45,
-        text: "Nook Corner",
-        cssClass: 'hs-dot'
-      }
-    ]
+    hotspots: []
   },
-  msbed_v1: {
-    group: "Master Bedroom",
-    title: "Master Suite",
-    url: "assets/images/Master_bedroom-View1.jpg",
+  vipBox: {
+    group: 'VIP Box',
+    title: 'VIP Box',
+    url: 'assets/images/VIP Box.jpg',
     floorplan: {
-      x: 20,
-      y: 20
-    },
-    hotspots: [
-      {
-        type: 'scene',
-        sceneId: 'msbed_v2',
-        pitch: 0,
-        yaw: 15,
-        text: 'Walk-in Closet',
-        cssClass: 'hs-dot'
-      }
-    ]
-  },
-  msbed_v2: {
-    group: "Master Bedroom",
-    title: "Walk-in Closet",
-    url: "assets/images/Master_bedroom-View2.jpg",
-    floorplan: {
-      x: 10,
-      y: 40
-    },
-    hotspots: [
-      {
-        type: 'scene',
-        sceneId: 'msbed_v1',
-        pitch: 0,
-        yaw: 38,
-        text: 'Master Suite',
-        cssClass: 'hs-dot'
-      },
-      {
-        type: 'scene',
-        sceneId: 'msbed_v3',
-        pitch: -20,
-        yaw: 175,
-        text: 'Spa Bathroom',
-        cssClass: 'hs-dot'
-      }
-    ]
-  },
-  msbed_v3: {
-    group: "Master Bedroom",
-    title: "Spa Bathroom",
-    url: "assets/images/Master_bedroom-View3.jpg",
-    floorplan: {
-      x: 10,
-      y: 48
-    },
-    hotspots: [      
-      {
-        type: 'scene',
-        sceneId: 'msbed_v2',
-        pitch: 0,
-        yaw: 0,
-        text: 'Walk-in Closet',
-        cssClass: 'hs-dot'
-      }
-    ]
-  },
-  bedroom2: {
-    group: "Bedroom 2",
-    title: "Bedroom 2",
-    url: "assets/images/Bedroom2-View1.jpg",
-    floorplan: {
-      x: 18,
-      y: 78
+      // Position the floor plan pin using percentages of the image width / height.
+      x: 40,
+      y: 18
     },
     hotspots: []
   }
