@@ -38,8 +38,8 @@ window.SCENES = {
     url: 'assets/images/VIP Box.jpg',
     floorplan: {
       // Position the floor plan pin using percentages of the image width / height.
-      x: 40,
-      y: 18
+      x: 71,
+      y: 45
     },
     hotspots: []
   }
