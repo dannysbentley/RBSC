@@ -3,7 +3,7 @@ function pickImg(baseName) {
   const dpr = window.devicePixelRatio || 1;
   const width = (window.innerWidth || 1200) * dpr;
   const size = width <= 900 ? 'Sml' : (width <= 1600 ? 'Mid' : 'Lrg');
-  return `assets/images/${baseName}_${size}_v2.jpg`;
+  return `assets/images/${baseName}_${size}_v3.jpg`;
 }
 
 window.SCENES = {
