@@ -1,8 +1,16 @@
+// Pick Sml / Mid / Lrg based on viewport * devicePixelRatio
+function pickImg(baseName) {
+  const dpr = window.devicePixelRatio || 1;
+  const width = (window.innerWidth || 1200) * dpr;
+  const size = width <= 900 ? 'Sml' : (width <= 1600 ? 'Mid' : 'Lrg');
+  return `assets/images/${baseName}_${size}_v1.jpg`;
+}
+
 window.SCENES = {
   diningArea: {
     group: 'Dining Area',
     title: 'Dining Area',
-    url: 'assets/images/Dining Area.jpg',
+    url: pickImg('Dining-Area'),
     floorplan: {
       // Position the floor plan pin using percentages of the image width / height.
       x: 25,
@@ -13,7 +21,7 @@ window.SCENES = {
   committeeBox: {
     group: 'Committee Box',
     title: 'Committee Box',
-    url: 'assets/images/Committee box.jpg',
+    url: pickImg('Committee-box'),
     floorplan: {
       // Position the floor plan pin using percentages of the image width / height.
       x: 58,
@@ -24,7 +32,7 @@ window.SCENES = {
   stewardsBox: {
     group: 'Stewards Box',
     title: 'Stewards Box',
-    url: 'assets/images/Stewards Box.jpg',
+    url: pickImg('Stewards-Box'),
     floorplan: {
       // Position the floor plan pin using percentages of the image width / height.
       x: 40,
@@ -35,7 +43,7 @@ window.SCENES = {
   vipBox: {
     group: 'VIP Box',
     title: 'VIP Box',
-    url: 'assets/images/VIP Box.jpg',
+    url: pickImg('VIP-Box'),
     floorplan: {
       // Position the floor plan pin using percentages of the image width / height.
       x: 71,
